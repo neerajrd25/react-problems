@@ -1,0 +1,46 @@
+[
+  {
+    "id": 2,
+    "name": "Transport"
+  },
+  {
+    "id": 3,
+    "name": "Food"
+  },
+  {
+    "id": 4,
+    "name": "Shopping"
+  },
+  {
+    "id": 5,
+    "name": "Entertainment"
+  },
+  {
+    "id": 6,
+    "name": "Fun"
+  },
+  {
+    "id": 7,
+    "name": "School"
+  },
+  {
+    "id": 8,
+    "name": "Travel"
+  },
+  {
+    "id": 9,
+    "name": "Learning"
+  },
+  {
+    "id": 10,
+    "name": "House Help"
+  },
+  {
+    "id": 11,
+    "name": "Home"
+  },
+  {
+    "id": 12,
+    "name": "Grocery"
+  }
+]

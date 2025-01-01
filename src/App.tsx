@@ -4,6 +4,15 @@ import { Test } from './components/Test';
 import { Home } from './components/Home';
 import { Transactions } from './components/Transactions';
 import { Debounce } from './components/Debounce';
+import { Timeout } from './components/Timeout';
+
+const navlinks = [
+  { path: '/', name: 'Home', component: <Home /> },
+  { path: '/test', name: 'Static Component',  component: <Test /> },
+  { path: '/transactions', name: 'API Example',  component: <Transactions /> },
+  { path: '/debounce', name: 'Debounce',  component: <Debounce /> },
+  { path: '/timeout', name: 'Custom Timeout',  component: <Timeout /> }
+];
 
 function App() {
 
@@ -12,10 +21,13 @@ function App() {
       <h1>React Examples</h1>
       <AppLinks />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/test" element={<Test />} />
+        {navlinks.map((nav)=>(<Route key={nav.path} path={nav.path} element={nav.component} />))}
+        
+        
+        {/* <Route path="/test" element={<Test />} />
         <Route path="/transactions" element={<Transactions />} />
         <Route path="/debounce" element={<Debounce/>} />
+        <Route path="/timeout" element={<Timeout/>} /> */}
 
       </Routes>
       {/* <AppLinks /> */}
@@ -28,13 +40,7 @@ function App() {
 export default App
 
 const AppLinks = () => {
-  const navlinks = [
-    { path: '/', name: 'Home' },
-    { path: '/test', name: 'Static Component' },
-    { path: '/transactions', name: 'API Example' },
-    { path: '/debounce', name: 'Debounce' }
 
-  ];
 
   return navlinks.map(({ path, name }) => (
     <p style={{ display: 'inline' }} key={path}>

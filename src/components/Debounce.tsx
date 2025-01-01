@@ -1,24 +1,23 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import category from '../data/category.json';
+import useDebounce from '../hooks/debounce.hook';
 
 export const Debounce = () => {
   const [data, setData] = useState(category);
   const [searchText, setSearchText] = useState('');
+
+  const searchQuery = useDebounce(searchText, 2000)
+
 
   const handleChange = (e: { target: { value: string; }; }) => {
     setSearchText(e.target.value);
   }
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      console.log(searchText);
-      const filteredData = category.filter((c) => c.name.toLowerCase().includes(searchText.toLowerCase()));
-      setData(filteredData);
-    }, 2000)
-
-    return () => clearTimeout(timeout)
-
-  }, [searchText]);
+    const filteredData = category.filter((c) => c.name.toLowerCase().includes(searchQuery.toLowerCase()));
+    setData(filteredData);
+  }, [searchQuery]);
+  
   return (
     <>
       <h1>Debounce Example</h1>

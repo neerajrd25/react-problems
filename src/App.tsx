@@ -5,13 +5,16 @@ import { Home } from './components/Home';
 import { Transactions } from './components/Transactions';
 import { Debounce } from './components/Debounce';
 import { Timeout } from './components/Timeout';
+import { Hover } from './components/Hover';
 
 const navlinks = [
   { path: '/', name: 'Home', component: <Home /> },
   { path: '/test', name: 'Static Component',  component: <Test /> },
   { path: '/transactions', name: 'API Example',  component: <Transactions /> },
   { path: '/debounce', name: 'Debounce',  component: <Debounce /> },
-  { path: '/timeout', name: 'Custom Timeout',  component: <Timeout /> }
+  { path: '/timeout', name: 'Custom Timeout',  component: <Timeout /> },
+  { path: '/hover', name: 'Use Hover',  component: <Hover /> }
+
 ];
 
 function App() {

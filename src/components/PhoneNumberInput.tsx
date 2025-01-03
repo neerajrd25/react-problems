@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from "react"
 
 const PhoneNumberInput = ({ maxLength = 10 }) => {
 
-  const inputRef = useRef(null);
+  const inputRef = useRef<HTMLInputElement>(null);
   const [phone, setPhone] = useState('');
-  const carretPositonRef = useRef(0);
+  const carretPositonRef = useRef<number>(0);
 
   // (123)456-7890 
   const handleChange = (event: { target: { value: string; selectionStart: any; }; }) => {

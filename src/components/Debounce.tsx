@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import category from '../data/category.json';
 import useDebounce from '../hooks/debounce.hook';
+import category from '../../public/data/category.json';
 
 export const Debounce = () => {
   const [data, setData] = useState(category);

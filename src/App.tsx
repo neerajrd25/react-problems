@@ -9,6 +9,7 @@ import { Hover } from './components/Hover';
 import PhoneNumber from './components/PhoneNumberInput';
 import { NewsFeed } from './components/NewsFeed';
 import { InfiniteScrolling } from './components/InfiniteScrolling';
+import { SWR } from './components/SWR';
 
 const navlinks = [
   { path: '/', name: 'Home', component: <Home /> },
@@ -19,7 +20,9 @@ const navlinks = [
   { path: '/hover', name: 'Use Hover',  component: <Hover /> },
   { path: '/phone-number', name: 'Phone Number',  component: <PhoneNumber /> },
   { path: '/newsfeed', name: 'News Feed',  component: <NewsFeed /> },
-  { path: '/infinite-scrolling', name: 'Infinite Scrolling',  component: <InfiniteScrolling /> }
+  { path: '/infinite-scrolling', name: 'Infinite Scrolling',  component: <InfiniteScrolling /> },
+  { path: '/swr', name: 'SWR',  component: <SWR /> }
+
 
 ];
 

@@ -10,6 +10,7 @@ import PhoneNumber from './components/PhoneNumberInput';
 import { NewsFeed } from './components/NewsFeed';
 import { InfiniteScrolling } from './components/InfiniteScrolling';
 import { SWR } from './components/SWR';
+import { WindowSize } from './components/WindowSize';
 
 const navlinks = [
   { path: '/', name: 'Home', component: <Home /> },
@@ -21,7 +22,8 @@ const navlinks = [
   { path: '/phone-number', name: 'Phone Number',  component: <PhoneNumber /> },
   { path: '/newsfeed', name: 'News Feed',  component: <NewsFeed /> },
   { path: '/infinite-scrolling', name: 'Infinite Scrolling',  component: <InfiniteScrolling /> },
-  { path: '/swr', name: 'SWR',  component: <SWR /> }
+  { path: '/swr', name: 'SWR',  component: <SWR /> },
+  { path: '/window-size', name: 'Window Size',  component: <WindowSize/> }
 
 
 ];

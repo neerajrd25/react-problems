@@ -11,6 +11,7 @@ import { NewsFeed } from './components/NewsFeed';
 import { InfiniteScrolling } from './components/InfiniteScrolling';
 import { SWR } from './components/SWR';
 import { WindowSize } from './components/WindowSize';
+import { HocDemo } from './components/HocDemo';
 
 const navlinks = [
   { path: '/', name: 'Home', component: <Home /> },
@@ -23,7 +24,8 @@ const navlinks = [
   { path: '/newsfeed', name: 'News Feed',  component: <NewsFeed /> },
   { path: '/infinite-scrolling', name: 'Infinite Scrolling',  component: <InfiniteScrolling /> },
   { path: '/swr', name: 'SWR',  component: <SWR /> },
-  { path: '/window-size', name: 'Window Size',  component: <WindowSize/> }
+  { path: '/window-size', name: 'Window Size',  component: <WindowSize/> },
+  { path: '/hoc', name: 'Hoc Demo',  component: <HocDemo/> }
 
 
 ];

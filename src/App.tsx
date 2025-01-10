@@ -12,6 +12,7 @@ import { InfiniteScrolling } from './components/InfiniteScrolling';
 import { SWR } from './components/SWR';
 import { WindowSize } from './components/WindowSize';
 import { HocDemo } from './components/HocDemo';
+import { ShoppingCart } from './components/ShoppingCart';
 
 const navlinks = [
   { path: '/', name: 'Home', component: <Home /> },
@@ -25,9 +26,8 @@ const navlinks = [
   { path: '/infinite-scrolling', name: 'Infinite Scrolling',  component: <InfiniteScrolling /> },
   { path: '/swr', name: 'SWR',  component: <SWR /> },
   { path: '/window-size', name: 'Window Size',  component: <WindowSize/> },
-  { path: '/hoc', name: 'Hoc Demo',  component: <HocDemo/> }
-
-
+  { path: '/hoc', name: 'Hoc Demo',  component: <HocDemo/> },
+  { path: '/shopping', name: 'Shopping Cart',  component: <ShoppingCart/> }
 ];
 
 function App() {

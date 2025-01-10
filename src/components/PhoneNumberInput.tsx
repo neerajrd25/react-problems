@@ -47,6 +47,13 @@ const PhoneNumberInput = ({ maxLength = 10 }) => {
     }
   }, [phone]);
 
+  useEffect(()=>{
+    console.log('2nd effect') // this will run only once 
+  },[])
+  useEffect(()=>{
+    console.log('3nd effect') // this will everytime changes 
+  })
+
   return (
     <>
       <input value={phone}  type="text" ref={inputRef} placeholder="Formatted Phone Number"

@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { useIsFirstRender } from "../hooks/firstRender.hook"
 
-export const Test = () => {
+const Test = () => {
   const [state, setState] = useState('Test');
 
   return (<>
@@ -10,3 +10,4 @@ export const Test = () => {
   </>
   )
 }
+export default Test

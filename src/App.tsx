@@ -21,6 +21,7 @@ const ContextDemo  = getLazy('./components/ContextDemo', 'ContextDemo')
 const Hover  = getLazy('./components/Hover', 'Hover')
 const PhoneNumber = getLazy('./components/PhoneNumberInput');
 
+const CssDemo = getLazy('./components/CssDemo', 'CssDemo');
 
 const navlinks = [
   { path: '/', name: 'Home', component: <Home /> },
@@ -36,7 +37,9 @@ const navlinks = [
   { path: '/window-size', name: 'Window Size', component: <WindowSize /> },
   { path: '/hoc', name: 'Hoc Demo', component: <HocDemo /> },
   { path: '/context', name: 'Context API', component: <ContextDemo /> },
-  { path: '/shopping', name: 'Shopping Cart', component: <ShoppingCart /> }
+  { path: '/shopping', name: 'Shopping Cart', component: <ShoppingCart /> },
+  { path: '/css-demo', name: 'CSS Demo', component: <CssDemo /> }
+
 ];
 
 function App() {

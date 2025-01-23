@@ -22,6 +22,7 @@ const Hover  = getLazy('./components/Hover', 'Hover')
 const PhoneNumber = getLazy('./components/PhoneNumberInput');
 
 const CssDemo = getLazy('./components/CssDemo', 'CssDemo');
+const CallBackDemo = getLazy('./components/CallBackDemo', 'CallBackDemo');
 
 const navlinks = [
   { path: '/', name: 'Home', component: <Home /> },
@@ -38,7 +39,8 @@ const navlinks = [
   { path: '/hoc', name: 'Hoc Demo', component: <HocDemo /> },
   { path: '/context', name: 'Context API', component: <ContextDemo /> },
   { path: '/shopping', name: 'Shopping Cart', component: <ShoppingCart /> },
-  { path: '/css-demo', name: 'CSS Demo', component: <CssDemo /> }
+  { path: '/css-demo', name: 'CSS Demo', component: <CssDemo /> },
+  { path: '/callback', name: 'Call back', component: <CallBackDemo /> }
 
 ];
 
